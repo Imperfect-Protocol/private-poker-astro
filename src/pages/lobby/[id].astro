@@ -1,0 +1,10 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import RouteIsland from '@/islands/RouteIsland.jsx';
+
+const id = Astro.params.id ?? '1';
+---
+
+<BaseLayout title="Private Poker | Lobby">
+  <RouteIsland route="lobby" props={{ id }} site={true} client:only="react" />
+</BaseLayout>

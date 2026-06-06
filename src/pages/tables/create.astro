@@ -1,0 +1,8 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import RouteIsland from '@/islands/RouteIsland.jsx';
+---
+
+<BaseLayout title="Private Poker | Create Table">
+  <RouteIsland route="createTable" client:only="react" />
+</BaseLayout>

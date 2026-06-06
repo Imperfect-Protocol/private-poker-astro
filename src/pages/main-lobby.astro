@@ -1,0 +1,8 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import RouteIsland from '@/islands/RouteIsland.jsx';
+---
+
+<BaseLayout title="Private Poker | Lobbies">
+  <RouteIsland route="mainLobby" site={true} client:only="react" />
+</BaseLayout>
